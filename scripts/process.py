@@ -21,7 +21,7 @@ def clean():
         'corpus',
         'organisme-affectataire',
         'classification',
-        'year',
+        'date',
         'montant'
         ]
     writer = csv.DictWriter(open(out_path, 'w'), lineterminator='\n',
@@ -44,7 +44,7 @@ def clean():
                     'corpus': row[3],
                     'organisme-affectataire': row[4],
                     'classification': row[5],
-                    'year': 2007 + yearidx,
+                    'date': u'{}-01-01'.format(2007 + yearidx),
                     'montant': amount
                     }
                 writer.writerow(out)
