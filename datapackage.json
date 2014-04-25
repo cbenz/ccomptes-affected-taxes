@@ -1,0 +1,65 @@
+{
+  "name": "fr-ccomptes-affected-taxes",
+  "title": "Cartographie de la fiscalité affectée, selon le périmètre retenu pour le rapport du Conseil des prélèvements obligatoires (2007-2013)"
+  "homepage": "",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "resources": [
+    {
+      "name": "taxes",
+      "path": "data/taxes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 384050,
+      "schema": {
+        "fields": [
+          {
+            "name": "uid",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "tax-identifier",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "tax-name",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "article",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "corpus",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "organisme-affectataire",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "classification",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "montant",
+            "type": "number",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ],
+}
